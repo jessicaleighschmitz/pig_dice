@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pig Dice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>PLAY THIS GAME</h1>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-12">
+        <form id="form">
+          <div id="playerOne" class="player-container col-6">
+            <h2>player one</h2>
+            <p class="score">
+              Score: <span class="player-score" id="playerOneScoreShow"></span>
+            </p>
+            <div class="dice">
+              <p>
+                <span class="show-dice"></span>
+              </p>
+            </div>
+
+            <div class="buttons-row">
+              <div class="play-button">
+                <label for="playerOnePlayButton" class="play-button-label">ROLL</label>
+                <input id="playerOnePlayButton" class="play-button-input" type="submit" />
+                <button onclick="hold()" type="button" name="playerOneHoldButton">HOLD UP</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="playerTwo" class="player-container col-6">
+            <h2>player two</h2>
+            <p class="score">
+              Score: <span class="player-score" id="playerTwoScoreShow"></span>
+            </p>
+            <div class="dice">
+              <p>
+                <span class="show-dice"></span>
+              </p>
+            </div>
+
+            <div class="buttons-row">
+              <div class="play-button">
+                <label for="playerTwoPlayButton" class="play-button-label">ROLL</label>
+                <input id="playerTwoPlayButton" class="play-button-input" type="submit" />
+              </div>
+            </div>
+          </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="winner-container">
+    <p>
+      <span id="winner"></span> wins!
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
